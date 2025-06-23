@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi playlist favorita</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+      }
+
+      nav {
+        background-color: #e6f0ff;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      nav li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      nav a {
+        color: #3b5998;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      aside {
+        background-color: #e9ebee;
+        width: 25%;
+        height: 600px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      aside li {
+        list-style: none;
+        margin: 15px 0;
+        padding-left: 10px;
+        border-left: 4px solid #3b5998;
+      }
+
+      aside li a:hover {
+        background-color: #d8dde3;
+        display: inline-block;
+        transition: background-color 0.3s;
+      }
+
+      aside ul {
+        padding: 0;
+      }
+
+      aside li {
+        list-style: none;
+        margin: 15px 0;
+      }
+
+      aside a {
+        color: #3b5998;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        display: block;
+      }
+
+      aside a:hover {
+        text-decoration: underline;
+      }
+
+      .contenido {
+        background-color: #fff;
+        width: 75%;
+        height: 600px;
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
+        text-align: center;
+        position: relative; /* Mantiene position: relative para los iframes absolutos */
+      }
+
+      .video-cell {
+        display: none; /* Ocultar todos los videos por defecto */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      iframe {
+        width: 80vw;
+        height: 45vw;
+        max-width: 640px;
+        max-height: 360px;
+        border: 2px solid #3b5998;
+        border-radius: 8px;
+      }
+
+      /* Mostrar el video correspondiente al ancla */
+      #cancion1:target,
+      #cancion2:target,
+      #cancion3:target,
+      #cancion4:target,
+      #cancion5:target,
+      #cancion6:target,
+      #cancion7:target {
+        display: block;
+      }
+
+      /* Mostrar el primer video por defecto si no hay ancla */
+      .contenido:not(:target) #cancion1 {
+        display: block;
+      }
+
+      footer {
+        background-color: #3b5998;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tabla.html">Tabla AoE</a></li>
+        <li><a href="millonario.html">Juego</a></li>
+        <li><a href="playlist.html">Playlist</a></li>
+      </ul>
+    </nav>
+    <main>
+      <aside>
+        <ul>
+          <li>
+            <a href="#cancion1"
+              >Biromes y Servilletas - Loli Molina y Nicolas Ibarburu</a
+            >
+          </li>
+          <li><a href="#cancion2">Clair de Lune - Debussy</a></li>
+          <li><a href="#cancion3">El pescador de estrellas - José José</a></li>
+          <li><a href="#cancion4">Sinful Passion - Dimash Qudaibergen</a></li>
+          <li><a href="#cancion5">Elissir - Akapellah</a></li>
+          <li><a href="#cancion6">Zamba de Usted - Maggie Cullen</a></li>
+          <li><a href="#cancion7">Ikanaide - Koji Tamaki</a></li>
+        </ul>
+      </aside><div class="contenido" id="contenido">
+        <div id="cancion1" class="video-cell">
+          <iframe
+            src="https://www.youtube.com/embed/uoJnC0B-_RY?si=A3IGFPjHwUZHMWze"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="cancion2" class="video-cell">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/WNcsUNKlAKw?si=9_iGpRxBkVeyp9Uj"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="cancion3" class="video-cell">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_VhKCfTkRvw?si=k8tfzfZnZdLGaiD3"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="cancion4" class="video-cell">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/W9FlDMCo8LU?si=gXGo-TQBeqazf1SU&amp;start=27"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="cancion5" class="video-cell">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Rd1TQqkc8Ug?si=7FwHSree8TJzKwzt"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="cancion6" class="video-cell">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/F_V3MKbDHOM?si=HLMkFuGMY31CObBL&amp;start=27"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="cancion7" class="video-cell">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/2j3ab7cu_30?si=StukAZwhro8_zSu1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer>© 2025 - Alex's Playlist</footer>
+  </body>
+</html>

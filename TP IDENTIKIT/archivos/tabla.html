@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Modern+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        text-align: center;
+        background-image: url(img/background.jpg);
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        font-family: "Cinzel", serif;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: -1;
+      }
+      nav {
+        background-color: #e6f0ff;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      nav li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      nav a {
+        color: #3b5998;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+      ul {
+        margin: 0;
+        padding: 8px;
+      }
+      li {
+        display: inline;
+      }
+      table {
+        width: 90%;
+        margin: 30px auto;
+        border-collapse: collapse;
+        background-color: rgba(20, 20, 20, 0.7);
+        border: 2px solid #c19a6b;
+      }
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid #b8860b;
+      }
+      #titulo {
+        text-align: center;
+      }
+
+      #celdaTitulo {
+        border-bottom: 0;
+        font-size: 35px;
+        color: white;
+        padding-bottom: 0;
+      }
+      #celdaLogo {
+        border-top: 0;
+      }
+      #logo {
+        height: 70px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .celdaTexto {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .celdaImagen {
+        width: 250px;
+        height: 375px;
+      }
+      .imgIcono {
+        width: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tabla.html">Tabla AoE</a></li>
+        <li><a href="millonario.html">Juego</a></li>
+        <li><a href="playlist.html">Playlist</a></li>
+      </ul>
+    </nav>
+    <table width="1250px">
+      <tr height="50px" id="titulo">
+        <td id="celdaTitulo" colspan="5">Evolucion del</td>
+      </tr>
+      <tr>
+        <td id="celdaLogo" colspan="5">
+          <img id="logo" src="img/aoelogo.png" alt="aoe logo" />
+        </td>
+      </tr>
+      <tr>
+        <td class="celdaTexto">1997</td>
+        <td class="celdaTexto">1999</td>
+        <td class="celdaTexto">2005</td>
+        <td class="celdaTexto">2002</td>
+        <td class="celdaTexto">2021</td>
+      </tr>
+      <tr>
+        <td class="celdaImagen">
+          <a
+            href="https://store.steampowered.com/app/1017900/Age_of_Empires_Definitive_Edition/"
+            target="_blank"
+          >
+            <img class="celdaImagen" src="img/aoe1f.avif" alt="aoe1" />
+          </a>
+        </td>
+        <td class="celdaImagen">
+          <a
+            href="https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/?l=spanish"
+          >
+            <img class="celdaImagen" src="img/aoe2f.webp" alt="aoe2" />
+          </a>
+        </td>
+        <td class="celdaImagen">
+          <a
+            href="https://store.steampowered.com/app/266840/Age_of_Mythology_Extended_Edition/?l=spanish"
+          >
+            <img
+              class="celdaImagen"
+              src="img/aoemyth.webp"
+              alt="aoe mythology"
+            />
+          </a>
+        </td>
+        <td class="celdaImagen">
+          <a
+            href="https://store.steampowered.com/app/933110/Age_of_Empires_III_Definitive_Edition/?l=spanish"
+          >
+            <img class="celdaImagen" src="img/aoe3f.jpg" alt="aoe3" />
+          </a>
+        </td>
+        <td class="celdaImagen">
+          <a
+            href="https://store.steampowered.com/app/1466860/Age_of_Empires_IV_Anniversary_Edition/?l=spanish"
+          >
+            <img class="celdaImagen" src="img/aoe4f.jpg" alt="aoe4" />
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="celdaTexto">Icono del juego</td>
+        <td class="celdaTexto">Icono del juego</td>
+        <td class="celdaTexto">Icono del juego</td>
+        <td class="celdaTexto">Icono del juego</td>
+        <td class="celdaTexto">Icono del juego</td>
+      </tr>
+      <tr>
+        <td>
+          <img class="imgIcono" src="img/aoe11icon.webp" alt="aoe1 icon" />
+        </td>
+        <td>
+          <img class="imgIcono" src="img/aoe2icon.webp" alt="aoe2 icon" />
+        </td>
+        <td>
+          <img
+            class="imgIcono"
+            src="img/aoemythicon.webp"
+            alt="aoe mythology icon"
+          />
+        </td>
+        <td>
+          <img class="imgIcono" src="img/aoe3icon.webp" alt="aoe3 icon" />
+        </td>
+        <td>
+          <img class="imgIcono" src="img/aoe4icon.webp" alt="aoe4 icon" />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

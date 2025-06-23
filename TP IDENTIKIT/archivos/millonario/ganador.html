@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felicidades!</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: url('../img/backgroundjuego.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: gold;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        .mensaje {
+            margin-top: 15%;
+            font-size: 40px;
+        }
+
+        .caja-premio {
+            background-color: rgba(25, 25, 112, 0.8);
+            border: 2px solid gold;
+            padding: 20px;
+            margin: 30px auto;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px gold;
+            font-size: 50px;
+        }
+
+        a {
+            color: #00bfff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <div class="mensaje">
+        <p>🎉 Te volviste millonario!</p>
+        <div class="caja-premio">
+            🏆 Ganaste <strong>$1,000,000</strong>! 💰
+        </div>
+        <p><a href="../millonario.html">Volver a jugar</a></p>
+    </div>
+    
+</body>
+</html>

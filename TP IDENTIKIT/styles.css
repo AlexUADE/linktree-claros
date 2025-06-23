@@ -1,0 +1,338 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056d2;
+}
+
+/* Nav */
+nav {
+    background-color: #e6f0ff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #3b5998;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Index */
+body.index {
+    background-color: #f0f2f5;
+    color: #333;
+    font-size: 16px;
+}
+
+.index h1 {
+    margin: 0;
+    padding: 20px;
+    background-color: #3b5998;
+    color: white;
+    font-size: 28px;
+}
+
+.index #fotoPerfil {
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.index p {
+    font-size: 18px;
+}
+
+.index blockquote {
+    font-style: italic;
+    color: #666;
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+.redesIconos {
+    width: 50px;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.redesIconos:hover {
+    transform: scale(1.1);
+}
+
+/* Playlist */
+body.playlist {
+    background-color: #f0f2f5;
+}
+
+.playlist aside {
+    background-color: #e9ebee;
+    width: 25%;
+    height: 600px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.playlist aside ul {
+    padding: 0;
+}
+
+.playlist aside li {
+    list-style: none;
+    margin: 15px 0;
+    padding-left: 10px;
+    border-left: 4px solid #3b5998;
+}
+
+.playlist aside a {
+    color: #3b5998;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+}
+
+.playlist aside a:hover {
+    text-decoration: underline;
+    background-color: #d8dde3;
+    transition: background-color 0.3s;
+}
+
+.playlist .contenido {
+    background-color: #fff;
+    width: 75%;
+    height: 600px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+}
+
+.playlist .caja-video {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.playlist .caja-video iframe {
+    width: 640px;
+    height: 360px;
+    max-width: 640px;
+    max-height: 360px;
+    border: 2px solid #3b5998;
+    border-radius: 8px;
+}
+
+.playlist #cancion1:target,
+.playlist #cancion2:target,
+.playlist #cancion3:target,
+.playlist #cancion4:target,
+.playlist #cancion5:target,
+.playlist #cancion6:target,
+.playlist #cancion7:target {
+    display: block;
+}
+
+.playlist .contenido:not(:target) #cancion1 {
+    display: block;
+}
+
+.playlist footer {
+    background-color: #3b5998;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Tabla */
+body.tabla {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    font-family: "Cinzel", serif;
+}
+
+body.tabla::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.tabla ul {
+    margin: 0;
+    padding: 8px;
+}
+
+.tabla li {
+    display: inline;
+}
+
+.tabla table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: rgba(20, 20, 20, 0.7);
+    border: 2px solid #c19a6b;
+}
+
+.tabla th,
+.tabla td {
+    padding: 10px;
+    border: 1px solid #b8860b;
+}
+
+.tabla #titulo {
+    text-align: center;
+}
+
+.tabla #celdaTitulo {
+    border-bottom: 0;
+    font-size: 35px;
+    color: white;
+    padding-bottom: 0;
+}
+
+.tabla #celdaLogo {
+    border-top: 0;
+}
+
+.tabla #logo {
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabla .celdaTexto {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.tabla .celdaImagen {
+    width: 250px;
+    height: 375px;
+}
+
+.tabla .imgIcono {
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Millonario */
+body.millonario {
+    background-image: url(img/backgroundjuego.jpg);
+    background-size: cover;
+    background-color: #000;
+    color: #ffffff;
+}
+
+body.millonario::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 40, 0.6);
+    z-index: -1;
+}
+
+.millonario a:hover {
+    text-decoration: underline;
+}
+
+.millonario .caja-preguntas {
+    background: rgba(25, 25, 112, 0.8);
+    border: 2px solid #daa520;
+    border-radius: 12px;
+    padding: 20px;
+    width: 60%;
+    margin: 40px auto;
+    box-shadow: 0 0 15px #00bfff;
+}
+
+.millonario .opciones {
+    margin-top: 20px;
+}
+
+.millonario .opcion {
+    background-color: rgba(0, 0, 50, 0.8);
+    border: 1px solid #00bfff;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    width: 60%;
+    margin: 10px auto;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.millonario .opcion:hover {
+    background-color: #1e90ff;
+    box-shadow: 0 0 10px #1e90ff, 0 0 20px #1e90ff;
+}
+
+.millonario .mensaje {
+    margin-top: 15%;
+    font-size: 40px;
+}
+
+.millonario.ganador .caja-premio {
+    background-color: rgba(25, 25, 112, 0.8);
+    border: 2px solid gold;
+    padding: 20px;
+    margin: 30px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px gold;
+    font-size: 50px;
+}
+
+.millonario.gameover .caja-premio {
+    background-color: rgba(50, 0, 0, 0.7);
+    border: 2px solid crimson;
+    padding: 20px;
+    margin: 30px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px crimson;
+    font-size: 50px;
+    color: #ffcccc;
+}

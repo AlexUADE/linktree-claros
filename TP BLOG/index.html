@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terraria Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="reproductor-audio">
+    <audio id="background-audio" loop>
+      <source src="music/journeysbeginning.mp3" type="audio/mpeg" />
+      Tu navegador no soporta audio HTML5.
+    </audio>
+    <button class="boton-audio" id="audio-control-btn" title="Reproducir o controlar música">▶️</button>
+  </div>
+
+  <header>
+    <nav class="navegacion">
+      <div class="logo">Terraria Blog</div>
+      <ul class="enlaces-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre mí</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="../index.html">Volver al Linktree</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="posts" class="publicaciones">
+    <article class="tarjeta-post">
+      <img src="img/terraria-forest.jpg" alt="Empezando en Terraria" />
+      <div class="tarjeta-contenido">
+        <h2>Empezando en Terraria</h2>
+        <p class="fecha">10 mayo 2025</p>
+        <p class="resumen">Primeros pasos en el bioma forestal: recursos, refugio y herramientas esenciales.</p>
+        <a href="posts/forest.html" class="boton">Leer más...</a>
+      </div>
+    </article>
+
+    <article class="tarjeta-post">
+      <img src="img/terraria-cavern.jpg" alt="Cavernas y minería" />
+      <div class="tarjeta-contenido">
+        <h2>Subsuelo y Cavernas</h2>
+        <p class="fecha">11 mayo 2025</p>
+        <p class="resumen">Exploración subterránea, recursos valiosos y peligros ocultos bajo tierra.</p>
+        <a href="posts/caverns.html" class="boton">Leer más...</a>
+      </div>
+    </article>
+
+    <article class="tarjeta-post">
+      <img src="img/terraria-corruption.jpg" alt="La Corrupción" />
+      <div class="tarjeta-contenido">
+        <h2>La Corrupción</h2>
+        <p class="fecha">12 mayo 2025</p>
+        <p class="resumen">Un bioma oscuro y hostil con desafíos únicos y valiosas recompensas.</p>
+        <a href="posts/corruption.html" class="boton">Leer más...</a>
+      </div>
+    </article>
+
+    <article class="tarjeta-post">
+      <img src="img/terraria-underworld.jpg" alt="El Inframundo" />
+      <div class="tarjeta-contenido">
+        <h2>El Inframundo</h2>
+        <p class="fecha">13 mayo 2025</p>
+        <p class="resumen">Fuego, lava y el jefe final del modo normal: ¡prepárate para el Muro de Carne!</p>
+        <a href="posts/underworld.html" class="boton">Leer más...</a>
+      </div>
+    </article>
+
+    <article class="tarjeta-post">
+      <img src="img/terraria-hardmode.jpg" alt="Hardmode Terraria" />
+      <div class="tarjeta-contenido">
+        <h2>Hardmode</h2>
+        <p class="fecha">14 mayo 2025</p>
+        <p class="resumen">Terraria cambia radicalmente: nuevos minerales, enemigos y desafíos.</p>
+        <a href="posts/hardmode.html" class="boton">Leer más...</a>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <div class="iconos-footer">
+      <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="mailto:ejemplo@email.com" title="Correo">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+    <p>&copy; 2025 Terraria Blog - Alex Claros</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

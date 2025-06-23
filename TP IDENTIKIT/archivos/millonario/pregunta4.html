@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(../img/backgroundjuego.jpg);
+        background-size: cover;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 40, 0.6);
+        z-index: -1;
+      }
+      nav {
+        background-color: #e6f0ff;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      nav li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      nav a {
+        color: #3b5998;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .caja-preguntas {
+        background: rgba(25, 25, 112, 0.8);
+        border: 2px solid #daa520;
+        border-radius: 12px;
+        padding: 20px;
+        width: 60%;
+        margin: 40px auto;
+        box-shadow: 0 0 15px #00bfff;
+      }
+      .opciones {
+        margin-top: 20px;
+      }
+      .opcion {
+        background-color: rgba(0, 0, 50, 0.8);
+        border: 1px solid #00bfff;
+        color: white;
+        padding: 12px;
+        border-radius: 8px;
+        width: 60%;
+        margin: 10px auto;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s ease;
+      }
+      .opcion:hover {
+        background-color: #1e90ff;
+        box-shadow: 0 0 10px #1e90ff, 0 0 20px #1e90ff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../tabla.html">Tabla AoE</a></li>
+        <li><a href="../millonario.html">Juego</a></li>
+      </ul>
+    </nav>
+    <h1>¿Quien quiere ser millonario?</h1>
+    <p>Premio: $100000</p>
+    <div class="caja-preguntas">
+      <p>¿Qué numero de pregunta es esta?</p>
+      <div class="opciones">
+        <a href="gameover.html" class="opcion">A) 2</a>
+        <a href="gameover.html" class="opcion">B) 5</a>
+        <a href="gameover.html" class="opcion">C) 3</a>
+        <a href="pregunta5.html" class="opcion">D) 4</a>
+      </div>
+    </div>
+  </body>
+</html>
