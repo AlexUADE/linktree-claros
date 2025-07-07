@@ -1,0 +1,101 @@
+:root {
+  --fondo: #0a192f;
+  --pantalla: #112240;
+  --boton: #233554;
+  --texto: #e0f7fa;
+  --acento: #64ffda;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contenedor-calculadora {
+  text-align: center;
+  padding: 2rem;
+}
+
+.titulo {
+  margin-bottom: 1.5rem;
+  color: var(--acento);
+}
+
+.calculadora {
+  background-color: var(--pantalla);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #64ffda33;
+  max-width: 320px;
+  margin: auto;
+}
+
+.pantalla {
+  width: 100%;
+  height: 60px;
+  font-size: 2rem;
+  text-align: right;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--fondo);
+  color: var(--acento);
+  box-sizing: border-box; /* 👈 Soluciona el problema */
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.boton {
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: var(--boton);
+  color: var(--texto);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.boton:hover {
+  background-color: var(--acento);
+  color: var(--fondo);
+}
+
+.operador {
+  color: var(--acento);
+}
+
+.igual {
+  background-color: var(--acento);
+  color: var(--fondo);
+  font-weight: bold;
+  grid-column: span 2;
+}
+
+.limpiar {
+  background-color: #ff5252;
+  color: white;
+}
+.retroceso {
+  background-color: #ffaa00;
+  color: #0a192f;
+  font-weight: bold;
+}
+.limpiar,
+.retroceso {
+  grid-column: auto; 
+}
+.igual {
+  grid-column: span 2;
+}

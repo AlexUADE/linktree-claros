@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de Alex Claros</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <button id="boton-menu" aria-label="Abrir navegación">&#9776;</button>
+      <nav class="navegacion">
+        <ul class="lista-navegacion">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="inicio" class="seccion-bienvenida">
+      <section class="presentacion">
+        <h1 id="titulo">|</h1>
+        <p>Desarrollador Frontend especializado en HTML, CSS y JavaScript.</p>
+        <a href="#proyectos" class="boton-ver-proyectos">Ver proyectos</a>
+      </section>
+    </main>
+
+    <section id="sobre-mi" class="seccion-sobre-mi animable">
+      <div class="contenedor-sobre-mi">
+        <h2 class="titulo-seccion">Sobre mí</h2>
+        <p class="descripcion">
+          Soy un desarrollador web frontend apasionado por el diseño elegante y
+          el código limpio. Me especializo en HTML, CSS y JavaScript, y disfruto
+          convertir ideas en experiencias visuales atractivas.
+        </p>
+        <p class="descripcion">
+          Este portfolio es una muestra de los proyectos y habilidades que
+          desarrollé durante la cursada. También me gusta experimentar con
+          animaciones, interfaces responsivas y código accesible.
+        </p>
+
+        <div class="habilidades" id="habilidades">
+          <h3 class="subtitulo-seccion">Habilidades Técnicas</h3>
+          <div class="grid-habilidades">
+            <div class="habilidad">
+              <i class="fab fa-html5"></i>
+              <p>HTML5</p>
+            </div>
+            <div class="habilidad">
+              <i class="fab fa-css3-alt"></i>
+              <p>CSS3</p>
+            </div>
+            <div class="habilidad">
+              <i class="fab fa-js"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="habilidad">
+              <i class="fab fa-git-alt"></i>
+              <p>Git</p>
+            </div>
+            <div class="habilidad">
+              <i class="fab fa-github"></i>
+              <p>GitHub</p>
+            </div>
+            <div class="habilidad">
+              <i class="fas fa-pencil-ruler"></i>
+              <p>Diseño UI</p>
+            </div>
+            <div class="habilidad">
+              <i class="fab fa-python"></i>
+              <p>Python</p>
+            </div>
+            <div class="habilidad">
+              <svg
+                class="icono-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <title>C++ icon</title>
+                <path
+                  fill="#0a192f"
+                  d="M22.393 6c-.167-.29-.398-.543-.652-.69L12.925.22c-.508-.293-1.339-.293-1.847 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.689l8.816 5.091c.508.293 1.339.293 1.847 0l8.816-5.091c.254-.146.485-.399.652-.689s.271-.616.271-.91V6.91c.002-.294-.102-.62-.269-.91z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M12 19.109c-3.92 0-7.109-3.189-7.109-7.109S8.08 4.891 12 4.891a7.133 7.133 0 0 1 6.156 3.552l-3.076 1.781A3.567 3.567 0 0 0 12 8.445c-1.96 0-3.554 1.595-3.554 3.555S10.04 15.555 12 15.555a3.57 3.57 0 0 0 3.08-1.778l3.077 1.78A7.135 7.135 0 0 1 12 19.109zm7.109-6.714h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79v.79zm2.962 0h-.79v.79h-.79v-.79h-.789v-.79h.789v-.79h.79v.79h.79v.79z"
+                />
+              </svg>
+
+              <p>C++</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="seccion-proyectos animable">
+      <div class="contenedor-proyectos">
+        <h2 class="titulo-seccion">Mis Proyectos</h2>
+        <div class="galeria-proyectos">
+          <article class="tarjeta-proyecto">
+            <h3>Calculadora Básica</h3>
+            <p>
+              Operaciones simples como resta, suma, multiplicación y división.
+            </p>
+            <button class="abrir-modal" data-url="calculadora/index.html">
+              Ver proyecto
+            </button>
+          </article>
+          <article class="tarjeta-proyecto">
+            <h3>Ta Te Ti</h3>
+            <p>Clásico juego de tres en línea. Modo jugador vs jugador.</p>
+            <button class="abrir-modal" data-url="tateti/index.html">
+              Jugar
+            </button>
+          </article>
+          <article class="tarjeta-proyecto">
+            <h3>Test de Reacción</h3>
+            <p>
+              Hace clic cuando el área se vuelva verde. Mide tu tiempo en
+              milisegundos.
+            </p>
+            <button class="abrir-modal" data-url="reaccion/index.html">
+              Probar
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion-contacto animable">
+      <div class="contenedor-contacto">
+        <h2 class="titulo-seccion">Contacto</h2>
+        <form
+          action="https://formsubmit.co/aclaros@uade.edu.ar"
+          method="POST"
+          class="formulario-contacto"
+        >
+          <input type="text" name="nombre" placeholder="Tu nombre" required />
+          <input type="email" name="email" placeholder="Tu correo" required />
+          <textarea
+            name="mensaje"
+            rows="5"
+            placeholder="Tu mensaje"
+            required
+          ></textarea>
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://alexuade.github.io/linktree-claros/portfolio/gracias.html"
+          />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="redes-sociales">
+        <a href="https://twitter.com/" target="_blank" aria-label="X (Twitter)">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://alexuade.github.io/linktree-claros/"
+          target="_blank"
+          aria-label="Linktree"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 80 97.7"
+            width="24"
+            height="24"
+            fill="currentColor"
+          >
+            <path
+              d="M0.2,33.1h24.2L7.1,16.7l9.5-9.6L33,23.8V0h14.2v23.8L63.6,7.1l9.5,9.6L55.8,33H80v13.5H55.7l17.3,16.7l-9.5,9.4L40,49.1
+              L16.5,72.7L7,63.2l17.3-16.7H0V33.1H0.2z M33.1,65.8h14.2v32H33.1V65.8z"
+            />
+          </svg>
+        </a>
+      </div>
+      <p>&copy; 2025 Alex Claros. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <div id="modal-proyecto" class="modal">
+      <div class="modal-contenido">
+        <button id="cerrar-modal" aria-label="Cerrar modal">&times;</button>
+        <iframe id="iframe-proyecto" src="" frameborder="0"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
